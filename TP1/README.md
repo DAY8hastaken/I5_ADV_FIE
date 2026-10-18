@@ -1,6 +1,6 @@
-# APDS TP1: What I Understood
+# ADV TP1: What I Understood
 
-My own summary of the TP1 lecture for **Advanced Programming for Data Science (APDS)**,
+My own summary of the TP1 lecture for **Advanced Programming for Data Science (ADV)**,
 written as a LaTeX Beamer slide deck.
 
 - **Student:** HEM Bellyday
@@ -12,8 +12,8 @@ written as a LaTeX Beamer slide deck.
 
 | File | Description |
 | --- | --- |
-| `apds_tp1_summary.tex` | LaTeX Beamer source of the slides |
-| `apds_tp1_summary.pdf` | Compiled slides (11 pages, 16:9) |
+| `adv_tp1_summary.tex` | LaTeX Beamer source of the slides |
+| `adv_tp1_summary.pdf` | Compiled slides (11 pages, 16:9) |
 | `README.md` | This file |
 
 ## What the slides cover
@@ -137,11 +137,11 @@ That's all I learned from that day.
 You need a LaTeX distribution with Beamer (TeX Live, MiKTeX, or Overleaf).
 
 ```bash
-pdflatex apds_tp1_summary.tex
-pdflatex apds_tp1_summary.tex   # run twice so the outline is filled in
+pdflatex adv_tp1_summary.tex
+pdflatex adv_tp1_summary.tex   # run twice so the outline is filled in
 ```
 
-On Overleaf, upload `apds_tp1_summary.tex` and click **Recompile**.
+On Overleaf, upload `adv_tp1_summary.tex` and click **Recompile**.
 
 ## Packages used
 
