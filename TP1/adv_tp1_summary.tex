@@ -1,0 +1,207 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme{Madrid}
+\usecolortheme{beaver}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+\definecolor{codebg}{RGB}{245,245,245}
+\definecolor{good}{RGB}{0,120,60}
+\definecolor{bad}{RGB}{180,0,0}
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{codebg},
+  keywordstyle=\color{blue!70!black}\bfseries,
+  commentstyle=\color{gray}\itshape,
+  stringstyle=\color{orange!70!black},
+  frame=single, rulecolor=\color{gray!40},
+  showstringspaces=false, columns=fullflexible,
+  aboveskip=4pt, belowskip=4pt
+}
+
+\title[ADV TP1 Summary]{ADV TP1: What I Understood}
+\subtitle{Advanced Programming for Data Science}
+\author[HEM Bellyday]{HEM Bellyday}
+\institute[ITC]{Department of Applied Mathematics and Statistics (AMS)\\
+Institute of Technology of Cambodia (ITC)\\[2pt]
+Lecturer: Mr.~VANN Visal}
+\date{Lecture of October 13, 2026}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% ===================== PART 1 =====================
+\section{Part 1: Building Blocks}
+
+\begin{frame}{Part 1: Building Blocks (1/2)}
+  \begin{block}{1. What is a function?}
+    This is like a math function: it has something like $x$ or $y$ in it when we
+    define it. We use it so we don't do a task again and again; we just use this
+    function and finish. (Write once, use quickly.)
+  \end{block}
+  \begin{block}{2. What is a variable?}
+    A variable is like a math definition: it refers to a value or object when we
+    want to define it.
+  \end{block}
+  \begin{block}{3. What is a class?}
+    A class is like a function, but it has a bunch of functions inside of it.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Part 1: Building Blocks (2/2)}
+  \begin{block}{4. What is a method?}
+    A method is a function that makes something work, or does an action, inside a
+    class. Example on the board: calculate score.
+  \end{block}
+  \begin{block}{5. What is a module?}
+    A module is like a \texttt{.py} file: we write functions inside it and call
+    them to use in the future in another module.
+  \end{block}
+  \begin{block}{6. What is a package?}
+    A bunch of modules stuck together. When we install a package, that is a bunch
+    of modules ready to use.
+  \end{block}
+  \begin{block}{7. What is a constant?}
+    It refers to a value that doesn't change, even in future use.
+  \end{block}
+\end{frame}
+
+% ===================== PART 2 =====================
+\section{Part 2: Clean Code}
+
+\begin{frame}{Part 2: Clean Code}
+  \begin{alertblock}{Before clean code}
+    The teacher asked what is something in class we don't understand, and I said
+    PEP~8.
+  \end{alertblock}
+  \begin{block}{What is clean code?}
+    Clean code refers to a file or code lines written so that not only the user
+    can understand them, but others can too.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Part 2: Clean Code Practices}
+  \begin{itemize}\setlength\itemsep{6pt}
+    \item[10.] \textbf{Descriptive name:} name the variable so it can be
+      understood quickly, and keep it short. Example: a function to start a moto
+      engine; there are many names we could use, but use one name that other
+      functions in the moto can't use.
+    \item[11.] \textbf{Comment:} \texttt{\#} that explains code in a single line.
+    \item[12.] \textbf{Docstring:} used to explain a whole function or class so
+      others can understand it.
+    \item[13.] \textbf{Naming values:} name values that can't be changed (even in
+      the future they don't change), so it is easy and we don't have to find that
+      value in whatever file it is in.
+    \item[14.] \textbf{Functions:} a function needs to be clear and reasonable to
+      use.
+  \end{itemize}
+\end{frame}
+
+% ===================== PART 3 =====================
+\section{Part 3: PEP 8}
+
+\begin{frame}{Part 3: What is PEP 8?}
+  \begin{block}{PEP 8}
+    PEP~8 is created by Python itself, just to make code structure more clean and
+    reasonable, and it is also a rule to follow from Python.
+  \end{block}
+  \vspace{6pt}
+  \centering
+  \begin{tabular}{@{}lll@{}}
+    \toprule
+    \textbf{What} & \textbf{Style} & \textbf{Example} \\
+    \midrule
+    Variables, functions, methods & \texttt{snake\_case} & \texttt{student\_score} \\
+    Constants & \texttt{UPPER\_CASE} & \texttt{PASS\_MARK} \\
+    Classes & \texttt{PascalCase} & \texttt{Student} \\
+    \bottomrule
+  \end{tabular}
+\end{frame}
+
+\begin{frame}{Part 3: PEP 8 Rules in Simple Words}
+  \small
+  \begin{itemize}\setlength\itemsep{3pt}
+    \item \textbf{Indentation:} 4 spaces for each level.
+    \item \textbf{Line length:} at most 79 characters for code, 72 for comments
+      and docstrings.
+    \item \textbf{Imports:} put them at the top. First Python's built-in modules,
+      then installed libraries, then my own files, with a blank line between each
+      group. Don't use \texttt{from x import *}.
+    \item \textbf{Spaces:} one space around \texttt{=} and \texttt{==}, but no
+      extra space just inside brackets or before the \texttt{(} of a call.
+    \item \textbf{Commas and colons:} a space after a comma, like
+      \texttt{[60, 80]}, but no spaces in a slice, like \texttt{scores[1:3]}.
+    \item \textbf{Blank lines:} 2 between top-level functions or classes, 1
+      between methods inside a class.
+    \item \textbf{Long lines:} wrap them inside parentheses, and break the line
+      before an operator like \texttt{+} or \texttt{and}.
+    \item \textbf{Quotes:} choose \texttt{'} or \texttt{"} and keep using the same
+      one. Docstrings use \texttt{"""}.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{Part 3: PEP 8 Example}
+  \begin{columns}[T]
+    \begin{column}{0.48\textwidth}
+      \textcolor{bad}{\textbf{Not following PEP 8}}
+\begin{lstlisting}
+passmark=50
+def HasPassed( s ):
+  return s>=passmark
+print (HasPassed(75))
+\end{lstlisting}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \textcolor{good}{\textbf{Following PEP 8}}
+\begin{lstlisting}
+PASS_MARK = 50
+
+
+def has_passed(score):
+    return score >= PASS_MARK
+
+
+print(has_passed(75))
+\end{lstlisting}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+% ===================== PART 4 =====================
+\section{Part 4: Debugging}
+
+\begin{frame}{Part 4: Debugging}
+  \begin{block}{What is debugging?}
+    Fixing errors, of course. But sometimes the error shown is not clear or
+    reasonable, so we have to check further in the code file.
+  \end{block}
+  \begin{block}{Tools the teacher recommended}
+    The teacher recommended 2 old-school tools. Even before AI existed, these are
+    what old programmers used. (I forgot the names.)
+  \end{block}
+\end{frame}
+
+\begin{frame}{Part 4: How I Debug}
+  \begin{enumerate}\setlength\itemsep{8pt}
+    \item Print the suspicious code line, so we can clearly see the error and know
+      what to fix.
+    \item Don't put 5 million lines of code in 1 file. Divide them and use them as
+      imports. When there is an error, it is easy to find in the file structure.
+  \end{enumerate}
+  \vspace{16pt}
+  \begin{center}
+    \large\textit{That's all I learned from that day.}
+  \end{center}
+\end{frame}
+
+\end{document}
