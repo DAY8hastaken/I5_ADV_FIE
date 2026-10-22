@@ -1,0 +1,33 @@
+employee_id,name,age,department,salary_usd,city
+1,BOB,19.0,HR,1768.0,Siem Reap
+2,george,20.0,Finance,311.0,Siem Reap
+3,george,32.0, finance ,,Battambang
+4, Charlie ,,HR,,Phnom Penh
+5,Hannah,52.0,Sales,505.0,Phnom Penh
+6,BOB,20.0,IT,1604.0,Battambang
+7,Fiona,-5.0,HR,1008.0,Siem Reap
+8,diana,28.0,Sales,1196.0,Battambang
+9,Alice,32.0,Finance,,Battambang
+10,diana,59.0,Sales,1272.0,phnom penh
+11,george,55.0,HR,1067.0,Siem Reap
+12, Charlie ,58.0,,577.0,phnom penh
+13,Alice,61.0,Finance,1726.0,
+14,Alice,64.0,it,2043.0,Battambang
+15,diana,150.0,,1015.0,Siem Reap
+16,BOB,150.0,,2049.0,Battambang
+17, Charlie ,26.0,Sales,1601.0,
+18,diana,63.0,Sales,888.0,Battambang
+19,,150.0,Finance,-100.0,Phnom Penh
+20,Ethan,60.0,IT,1244.0,
+21,george,-5.0,Finance,999999.0,phnom penh
+22,BOB,33.0,IT,642.0,
+23,Hannah,53.0,Finance,450.0,
+24,,48.0,,687.0,phnom penh
+25,Hannah,36.0,it,-100.0,
+26,Fiona,21.0, finance ,352.0,phnom penh
+27, Charlie ,22.0,Finance,-100.0,Siem Reap
+28,george,60.0, finance ,1445.0,
+29,,60.0,HR,1571.0,phnom penh
+30,BOB,22.0,IT,1351.0,
+5,Hannah,52.0,Sales,505.0,Phnom Penh
+12, Charlie ,58.0,,577.0,phnom penh
